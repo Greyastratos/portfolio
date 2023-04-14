@@ -1,6 +1,5 @@
 import {
   mobile,
-  backend,
   web,
   javascript,
   typescript,
@@ -19,6 +18,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  back,
 } from "../assets";
 
 export const navLinks = [
@@ -47,7 +47,7 @@ const services = [
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: back,
   },
 
 ];
