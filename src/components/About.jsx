@@ -4,9 +4,10 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Tilt } from "react-tilt";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <div className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full violet-blue-gradient p-[1px] rounded-[20px] shadow-card'
@@ -30,7 +31,7 @@ const ServiceCard = ({ index, title, icon }) => (
         </h3>
       </div>
     </motion.div>
-  </div>
+  </Tilt>
 );
 
 const About = () => {
@@ -45,12 +46,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-       Soy Argentino! actualmente vivo en Valencia, España.
-
-      Poseo amplios conocimientos en herramientas de Desarrollo Web, APIS,  
-      bases de datos relacionales y no relacionales. 
-      A lo largo de estos años en el ámbito laboral he descubierto que soy una 
-      persona proactiva, autónoma, resolutiva y con habilidades de trabajo en equipo.
+        Developer Fullstack con experiencia en proyectos freelance tanto
+         en Argentina como en España. Soy una persona altamente responsable, 
+         orientada a resultados y con una alta vocación de servicio. 
+         Disfruto del intercambio y del aprendizaje constante.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

@@ -1,34 +1,37 @@
 import {
-  mobile,
-  web,
+  front,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
-  docker,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  freelance,
   threejs,
-  back,
+  backend,
+  oso,
+  osoicon,
+  soft,
+  estudios,
+  agil,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "Intro",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "exp",
+    title: "Experiencia",
+  },
+  {
+    id: "proyects",
+    title: "Proyects",
   },
   {
     id: "contact",
@@ -38,18 +41,21 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Soft Skills",
+    icon: soft,
   },
   {
-    title: "Frontend Developer",
-    icon: mobile,
+    title: "Diseño",
+    icon: front,
   },
   {
-    title: "Backend Developer",
-    icon: back,
+    title: "Desarrollo",
+    icon: backend,
   },
-
+  {
+    title: "Agile Methodology",
+    icon: agil,
+  },
 ];
 
 const technologies = [
@@ -72,10 +78,6 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -101,26 +103,48 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "Freelance",
+    icon: freelance,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: " 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desarrollar páginas web para diferentes compañías de Argentina y España utilizando HTML5, CSS3, JavaScript, SASS, Tailwind, React.js.",
+      "Atender los requerimientos de los diferentes clientes.",
+      "Trabajar en conjunto con el equipo de desarrollo y el equipo de diseño.",
     ],
   },
+  {
+    title: "Estudiante Full-Stack",
+    company_name: "CoderHouse",
+    icon: estudios,
+    iconBg: "#383E56",
+    date: " 2021 - 2022",
+    points: [
+      "Curso diseño WEB",
+      "Curso Javascript",
+      "Curso React.js",
+      "Curso BackEnd"
+    ],
+  },
+  {
+    title: "Fundamentos de la Programacion",
+    company_name: "Centro e-Learning UTN FRBA",
+    icon: estudios,
+    iconBg: "#383E56",
+    date: " 2021",
+    points: [
+      "Curso diseño WEB",
+      "Curso Javascript",
+      "Curso React.js",
+      "Curso BackEnd"
+    ],
+  },
+
  
 ];
 
@@ -128,68 +152,30 @@ const experiences = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Oso producciones",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Landing page de Oso Comunicaciones, Oso Comunicación es una agencia de comunicación integral, especializada en social media y marketing digital",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: oso,
+    proyect_icon:osoicon,
+//    source_code_link: "/",
+    source_page_link: "https://oso-comunicacion.web.app"
+
   },
+  
 ];
 
 export { services, technologies, experiences, projects };
