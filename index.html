@@ -9,5 +9,25 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyA9eLI2jw9941zwGbhiyRRu0skPDhsTtek",
+        authDomain: "portfoliomartincarrizo.firebaseapp.com",
+        databaseURL: "https://portfoliomartincarrizo-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "portfoliomartincarrizo",
+        storageBucket: "portfoliomartincarrizo.appspot.com",
+        messagingSenderId: "189906468581",
+        appId: "1:189906468581:web:fcb448f4d8a02f87c4de0c"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
