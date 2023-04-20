@@ -40,7 +40,15 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link?source_code_link: source_page_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
-              <img
+              <motion.img
+              animate={{
+                y: [6, 0, 6],
+              }}
+              transition={{
+                duration: 1.8,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
                 src={proyect_icon?proyect_icon:github}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
